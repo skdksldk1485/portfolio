@@ -1,8 +1,22 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: 'IsuKim',
+    description: "IsuKim's portfolio website",
+    keyword:
+      'portfolio, portfolio website, frontend developer, frontend, web developer, IsuKim',
+    siteUrl: '',
+    image: '',
+    author: 'IsuKim',
+    profiles: {
+      phone: '+82 01052032463',
+      email: 'skdksldk1148@gmail.com',
+      linkedin: '',
+      instagram: '',
+      github: 'https://github.com/skdksldk1485',
+      velog: 'https://velog.io/@skdksldk14',
+      medium: '',
+      resume: '',
+    },
   },
   plugins: [
     `gatsby-plugin-typescript`, // 추가!
