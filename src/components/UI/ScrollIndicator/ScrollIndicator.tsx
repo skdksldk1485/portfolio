@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import scrollTo from 'gatsby-plugin-smoothscroll';
-/*import arrow from '../../../assets/icons/arrow.svg';*/
-import { bounce } from '../../../styles/animations';
+import arrow from 'icons/arrow.svg';
+import { bounce } from 'styles/animations';
 
 const Wrapper = styled.div`
   display: none;
@@ -43,7 +43,7 @@ const ScrollIndicator: React.FC = () => {
   return (
     <Wrapper>
       <button onClick={() => scrollTo('#about')}>Scroll</button>
-      
+      <img src={arrow} />
     </Wrapper>
   );
 };

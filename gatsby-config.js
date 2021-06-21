@@ -1,10 +1,12 @@
+const path = require('path');
+
 module.exports = {
   siteMetadata: {
     title: 'IsuKim',
     description: "IsuKim's portfolio website",
     keyword:
       'portfolio, portfolio website, frontend developer, frontend, web developer, IsuKim',
-    siteUrl: '',
+    siteUrl: 'https://suyeon.me',
     image: '',
     author: 'IsuKim',
     profiles: {
@@ -43,6 +45,18 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: 'gatsby-plugin-root-import',
+      options: {
+        src: path.join(__dirname, 'src'),
+        components: path.join(__dirname, 'src/components'),
+        icons: path.join(__dirname, 'src/assets/icons'),
+        fonts: path.join(__dirname, 'src/assets/fonts'),
+        images: path.join(__dirname, 'src/assets/images'),
+        styles: path.join(__dirname, 'src/styles'),
+        hooks: path.join(__dirname, 'src/hooks'),
+      },
+    },    
     `gatsby-plugin-gatsby-cloud`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

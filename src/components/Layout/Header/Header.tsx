@@ -6,8 +6,8 @@ import scrollTo from 'gatsby-plugin-smoothscroll';
 import gsap from 'gsap';
 
 /*import heroImg from 'images/hero.jpg';*/
-import { moveToLeft } from '../../../styles/animations';
-import ScrollIndicator from '../../../components/UI/ScrollIndicator/ScrollIndicator';
+import { moveToLeft } from 'styles/animations';
+import ScrollIndicator from 'components/UI/ScrollIndicator/ScrollIndicator';
 
 const Wrapper = styled.section`
   width: 100%;
