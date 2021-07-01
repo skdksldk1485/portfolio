@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
+import Footer from 'components/Layout/Footer/Footer';
 
 const GlobalStyle = createGlobalStyle`
   ${reset}
@@ -116,6 +117,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <header>
       </header>
       <main>{children}</main>
+      <Footer />
     </div>
   );
 };
