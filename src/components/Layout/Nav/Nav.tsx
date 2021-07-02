@@ -2,8 +2,6 @@ import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 
-import LangDropdown from 'components/UI/LangDropdown/LangDropdown';
-
 const Wrapper = styled.nav`
   position: fixed;
   top: 0;
@@ -62,7 +60,6 @@ const StyledLink = styled(Link)`
 const Nav: React.FC = () => {
   return (
     <Wrapper>
-      <LangDropdown />
       <StyledLink to="/">ISU.</StyledLink>
     </Wrapper>
   );
