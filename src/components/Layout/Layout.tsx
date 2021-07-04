@@ -4,6 +4,7 @@ import reset from 'styled-reset';
 import Nav from 'components/Layout/Nav/Nav';
 import Footer from 'components/Layout/Footer/Footer';
 import SEO from 'components/Layout/SEO/SEO';
+import 'fonts/fonts.css';
 
 const GlobalStyle = createGlobalStyle`
   ${reset}
