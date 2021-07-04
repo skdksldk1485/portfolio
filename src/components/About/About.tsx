@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import { useStaticQuery, graphql } from 'gatsby';
 import { Wrapper, H1Title, H2, Bold, Capital, Link } from 'styles/styles';
-
+import heroImg from 'images/hero.jpg';
 import { revealText } from 'styles/animations';
 
 const Tag = styled.p`
@@ -11,11 +11,30 @@ const Tag = styled.p`
 `;
 
 const Description = styled.p`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   font-family: 'Merriweather', 'Spoqa Han Sans';
   font-weight: 300;
+  opacity: 0;
+  transform: translateY(60px);
 
   &:not(:last-child) {
     margin-bottom: 3rem;
+  }
+
+  img {
+    width: 30%;
+    margin: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  @media (max-width: 576px) {
+    flex-direction: column;
+
+    img {
+      width: 70%;
+    }
   }
 `;
 
@@ -26,7 +45,7 @@ const Title = styled.h1`
   font-weight: 700;
   text-align: center;
   line-height: 1.5;
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
   margin-bottom: 5rem;
   opacity: 0;
@@ -51,6 +70,10 @@ const SkillWrapper = styled.div`
     opacity: 1;
     transform: translateY(0);
   }
+`;
+
+const Text = styled.div`
+  margin: 3rem;
 `;
 
 interface SkillProp {
@@ -107,9 +130,15 @@ const About: React.FC = () => {
         </Title>
         <Description id="about-text">
           <Capital>{''}</Capital>
+          <img src={heroImg} alt="image"></img>
+          <div>
+          <Text>
           {data.site.siteMetadata.about.description1}
+          <p></p><br></br>
+          {data.site.siteMetadata.about.description2}
+          </Text>
+          </div>
         </Description>
-        <Description id="about-text">{data.site.siteMetadata.about.description2}</Description>
       </div>
       <div ref={skillRef}>
         <H1Title align="left" id="skill-text">

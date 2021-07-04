@@ -62,7 +62,7 @@ const GlobalStyle = createGlobalStyle`
     background-color: transparent;
   }
 
-  p, ul {
+  ul {
     opacity: 0;
     transform: translateY(60px);
   }

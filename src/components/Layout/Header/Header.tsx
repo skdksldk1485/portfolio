@@ -4,15 +4,18 @@ import { useStaticQuery, graphql } from 'gatsby';
 import { useTranslation } from 'react-i18next';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import gsap from 'gsap';
-
-/*import heroImg from 'images/hero.jpg';*/
+import backImg from 'images/back.jpg';
 import { moveToLeft } from 'styles/animations';
 import ScrollIndicator from 'components/UI/ScrollIndicator/ScrollIndicator';
 
 const Wrapper = styled.section`
   width: 100%;
   height: 100vh;
-
+  background-color: gray;
+  background: url(${backImg});
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left top;
   display: flex;
   align-items: center;
 
@@ -73,7 +76,7 @@ const Navs = styled.ul`
   }
 
   @media (max-width: 576px) {
-    display: none;
+    
   }
 
   @media (max-width: 812px) and (orientation: landscape) {
