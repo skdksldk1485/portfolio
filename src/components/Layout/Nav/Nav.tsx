@@ -60,7 +60,7 @@ const StyledLink = styled(Link)`
 const Nav: React.FC = () => {
   return (
     <Wrapper>
-      <StyledLink to="/">ISU.</StyledLink>
+      <StyledLink to="/">ISU's Portfolio.</StyledLink>
     </Wrapper>
   );
 };
