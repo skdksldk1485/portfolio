@@ -25,10 +25,10 @@ module.exports = {
       description2 : '실력 있는 개발자는, 잘 갖춰진 기술을 바탕으로 복잡하고 어려운 것들을 누구나 이해할 수 있도록 쉽게 풀어낼 수 있고, 커뮤니케이션에 능통하여 편안하고 원활한 협업이 가능하게 하는 사람이라고 생각합니다. 이러한 개발자가 되기 위해서 끊임없이 학습하고 노력하고 있습니다.'
     },
     project : {
-      work1 : 'React Hooks, MobX를 사용한 영화 프로젝트',
-      work2 : 'React Hooks, MobX를 사용한 프로젝트',
-      work3 : '카카오 지도 API와 서울시 열린데이터 광장 API를 이용한 프로젝트',
-      work4 : 'E-commerce형태의 웹 서비스를 구현한 쇼핑몰 프로젝트',
+      work1 : 'React Hooks, MobX로 개발한 영화소개사이트',
+      work2 : '카카오 지도 API와 서울시 열린데이터 광장 API를 이용한 프로젝트',
+      work3 : 'E-commerce형태의 웹 서비스를 구현한 쇼핑몰 프로젝트',
+      work4 : '자기계발 동영상 stream Storage 서비스 사이트',
     }
   },
   plugins: [

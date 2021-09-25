@@ -131,7 +131,7 @@ const Header: React.FC = () => {
 
   const navLinks: Link[] = [
     { text: 'About', link: '#about' },
-    { text: 'Work', link: '#work' },
+    { text: 'Project', link: '#work' },
     { text: 'Contract', link: '#contact' },
   ];
   const pageLinks: Link[] = [

@@ -88,34 +88,33 @@ const Work: React.FC = () => {
 
   const projects: PropjectObj[] = [
     {
-      title: 'React Movie',
-      des: data.site.siteMetadata.project.work1,
-      link: 'https://isu-react-movie.netlify.app/',
-      github: 'https://github.com/skdksldk1485/React_Movie',
-      techStacks:
-        'HTML5 / CSS3, React, JavaScript(ES6+), Styled-components',
-    },
-    {
       title: 'React MobX Movie',
-      des: data.site.siteMetadata.project.work2,
+      des: data.site.siteMetadata.project.work1,
       link: 'https://isu-mobx-movie.netlify.app/',
       github: 'https://github.com/skdksldk1485/react-mobx-movie',
       techStacks:
-        'HTML5 / CSS3, React, React Hooks, MobX, SCSS',
+        'HTML5 / CSS3, React, React Hooks, MobX, SCSS, material-ui',
     },
     {
       title: 'Seoul-WifiFinder',
-      des: data.site.siteMetadata.project.work3,
-      link: 'https://',
+      des: data.site.siteMetadata.project.work2,
+      link: 'https://seoulfinder.info',
       github: 'https://github.com/skdksldk1485/seoul-wifiFinder',
       techStacks: 'HTML5 / CSS3, JavaScript(ES6+), React, Styled-components',
     },
     {
       title: 'ISU Online Shopping',
-      des: data.site.siteMetadata.project.work4,
-      link: 'http://',
+      des: data.site.siteMetadata.project.work3,
+      link: 'https://stark-sierra-83309.herokuapp.com/',
       github: 'https://github.com/skdksldk1485/ISU_Online_Shopping',
       techStacks: 'HTML5 / CSS3, JavaScript(ES6+), React, Redux, Redux-thunk, MongoDB, Mongoose, Node.js, Express, SCSS, Gsap',
+    },
+    {
+      title: 'Life Manager',
+      des: data.site.siteMetadata.project.work4,
+      link: 'http://vast-inlet-73884.herokuapp.com/',
+      github: 'https://github.com/skdksldk1485/Life_Manager',
+      techStacks: 'HTML5 / CSS3, Typescript, React, GraphQL, next.js, Apollo, Styled-components, material-ui',
     },
   ];
 
