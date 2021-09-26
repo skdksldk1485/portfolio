@@ -76,7 +76,7 @@ const Navs = styled.ul`
   }
 
   @media (max-width: 576px) {
-    
+    display: none;
   }
 
   @media (max-width: 812px) and (orientation: landscape) {

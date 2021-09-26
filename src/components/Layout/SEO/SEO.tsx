@@ -39,7 +39,7 @@ const SEO = () => {
         href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,300;1,700&family=Poppins:wght@300;500;700;900&display=swap"
         rel="stylesheet"
       />
-      <title>Isu Kim</title>
+      <title>ISU's Portfolio</title>
       <script type="application/ld+json">
         {`
               {
