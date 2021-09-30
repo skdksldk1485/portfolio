@@ -114,9 +114,9 @@ const About: React.FC = () => {
   }, []);
   
   const techSkills: string =
-    '#html5 #css #scss #styled-components #javascript #react #redux #mobx #gatsby.js #typescript';
+    '#html5 #css #scss #styled-components #javascript #react #redux #mobx #gatsby.js #next.js #typescript';
   const otherSkills: string =
-    '#babel #webpack #git #github #firebase #googleAnalytics #figma';
+    '#git #github';
   const postLink: string =
     'https://velog.io/@suyeonme/%EC%96%B4%EC%A9%8C%EB%8B%A4-%EA%B0%9C%EB%B0%9C%EC%9E%90%EA%B0%80-%EB%90%98%EC%97%88%EB%82%98';
 
