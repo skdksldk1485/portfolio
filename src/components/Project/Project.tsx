@@ -49,16 +49,20 @@ const Project = ({ project }: ProjectProp) => {
       <H2>{title}</H2>
       <p>{des}</p>
       <ul>
+      {link &&
         <li>
           <Link href={link} target="_blank">
             {link}
           </Link>
         </li>
+      }
+      {github &&
         <li>
           <a href={github} target="_blank">
             Github Repo
           </a>
         </li>
+      }
         <li>{techStacks}</li>
       </ul>
     </ProjectWrapper>
