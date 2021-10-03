@@ -77,17 +77,24 @@ const CareerWrapper = styled.div`
   transform: translateY(60px);
 
   h2,
-  p, 
   ul {
     opacity: 1;
     transform: translateY(0);
     margin-bottom: 1rem;
   }
 
+  p {
+    font-family: 'Merriweather', 'Spoqa Han Sans';
+    font-weight: 300;
+  }
+
   li {
     line-height: 1.7;
     font-family: 'Merriweather', 'Spoqa Han Sans';
     font-weight: 300;
+    list-style-position: inside;
+    text-indent: -20px;
+    padding-left: 20px;
   }
 `;
 
@@ -111,15 +118,17 @@ const Skill: React.FC<SkillProp> = ({ title, tags }) => {
 
 interface CareerProp {
   title: string;
+  work: string;
   tag1: string;
   tag2: string;
   tag3: string;
 }
 
-const Career: React.FC<CareerProp> = ({ title, tag1, tag2, tag3 }) => {
+const Career: React.FC<CareerProp> = ({ title, work, tag1, tag2, tag3 }) => {
   return (
     <CareerWrapper style={{ marginBottom: '3rem' }} id="skill-text">
       <H2>{title}</H2>
+      <p>{work}</p>
       <ul>
         <li>{tag1}</li>
         <li>{tag2}</li>
@@ -166,6 +175,8 @@ const About: React.FC = () => {
     '팁스 사업관리시스템(SMTECH) 운영 및 유지보수 [2020.01 - 2021.04]';  
   const career3: string =
     '국방 군수통합정보체계 구축사업 [2019.03 ~ 2019.12]';
+    const work: string =  
+    'SI 웹개발 구축 및 유지보수 업무';
 
   return (
     <Wrapper padding="6rem 15rem" bgColor="white" id="about" ref={sectionRef}>
@@ -198,7 +209,7 @@ const About: React.FC = () => {
         <H1Title align="left" id="skill-text">
           CAREERS:
         </H1Title>
-        <Career title="KCC정보통신 [SI 웹개발 구축 및 유지보수 업무, 2018년 입사 ~ 현재]" tag1={career1} tag2={career2} tag3={career3} />
+        <Career title="KCC정보통신 [2018년 입사 ~ 현재]" work={work} tag1={career1} tag2={career2} tag3={career3} />
       </div>       
     </Wrapper>
   );

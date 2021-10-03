@@ -121,7 +121,7 @@ const Header: React.FC = () => {
           profiles {
             linkedin
             github
-            medium
+            resume
             velog
           }
         }
@@ -136,9 +136,8 @@ const Header: React.FC = () => {
   ];
   const pageLinks: Link[] = [
     { text: 'Github |', link: data.site.siteMetadata.profiles.github },
-    { text: 'Linkedin  |', link: data.site.siteMetadata.profiles.linkedin },
-    { text: 'Medium  |', link: data.site.siteMetadata.profiles.medium },
-    { text: 'Velog', link: data.site.siteMetadata.profiles.velog },
+    { text: 'Velog |', link: data.site.siteMetadata.profiles.velog },
+    { text: 'Resume', link: data.site.siteMetadata.profiles.resume },
   ];
 
   useEffect(() => {
@@ -163,14 +162,14 @@ const Header: React.FC = () => {
         </Navs>
         <p id="header-text">
           <span>{'김이수'}</span>
-          {'프론트엔드 개발자'}
+          <span>{'프론트엔드 개발자'}</span>
         </p>
 
         <Links id="header-text">
           {pageLinks.map((link) => (
             <li key={link.text}>
               <a href={link.link} target="_blank">
-                {link.text}
+                <span>{link.text}</span>
               </a>
             </li>
           ))}
