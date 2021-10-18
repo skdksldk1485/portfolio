@@ -34,18 +34,18 @@ const Button: React.FC<PropButton> = ({ text, paddingTop }) => {
       site {
         siteMetadata {
           profiles {
-            github
+            velog
           }
         }
       }
     }
   `);
 
-  const githubRepo: string = `${data.site.siteMetadata.profiles.github}?tab=repositories`;
+  const velog: string = `${data.site.siteMetadata.profiles.velog}`;
 
   return (
     <BtnWrapper paddingTop={paddingTop}>
-      <Btn href={githubRepo} target="_blank">
+      <Btn href={velog} target="_blank">
         {text}
       </Btn>
     </BtnWrapper>

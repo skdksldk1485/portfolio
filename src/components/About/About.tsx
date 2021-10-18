@@ -168,7 +168,7 @@ const About: React.FC = () => {
   const otherSkills: string =
     '#git #github';
   const postLink: string =
-    'https://velog.io/@suyeonme/%EC%96%B4%EC%A9%8C%EB%8B%A4-%EA%B0%9C%EB%B0%9C%EC%9E%90%EA%B0%80-%EB%90%98%EC%97%88%EB%82%98';
+    'https://velog.io/@skdksldk14/%EB%82%98%EC%9D%98-%EC%9D%B4%EC%95%BC%EA%B8%B0';
   const career1: string =
     '농림수산식품교육문화정보원(농정원) 개발 유지보수 [2021.07 - 현재]';
   const career2: string =

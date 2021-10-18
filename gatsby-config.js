@@ -15,7 +15,7 @@ module.exports = {
       linkedin: '',
       instagram: '',
       github: 'https://github.com/skdksldk1485',
-      velog: 'https://velog.io/@skdksldk14',
+      velog: 'https://velog.io/@skdksldk14/%EB%82%98%EC%9D%98-%EC%9D%B4%EC%95%BC%EA%B8%B0',
       medium: '',
       resume: 'https://www.notion.so/Ordinary-Code-7bb4a4036d944090909b9cc87d3c609e',
     },
