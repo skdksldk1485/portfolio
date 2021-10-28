@@ -17,7 +17,7 @@ module.exports = {
       github: 'https://github.com/skdksldk1485',
       velog: 'https://velog.io/@skdksldk14/%EB%82%98%EC%9D%98-%EC%9D%B4%EC%95%BC%EA%B8%B0',
       medium: '',
-      resume: 'https://www.notion.so/Ordinary-Code-7bb4a4036d944090909b9cc87d3c609e',
+      resume: 'https://chartreuse-saltopus-d7d.notion.site/Resume-ccb1891265864289b25ab15163fdd7f7',
     },
     about : {
       title : '뜨거운 열정보다 중요한 것은 지속적인 열정이다.',
