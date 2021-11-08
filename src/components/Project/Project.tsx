@@ -92,7 +92,7 @@ const Work: React.FC = () => {
 
   const projects: PropjectObj[] = [
     {
-      title: 'React MobX Movie',
+      title: 'MobX Movie',
       des: data.site.siteMetadata.project.work1,
       link: 'https://isu-mobx-movie.netlify.app/',
       github: 'https://github.com/skdksldk1485/react-mobx-movie',
